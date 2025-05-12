@@ -1,0 +1,55 @@
+{
+  "name": "hq-dungeon-randomizer",
+  "version": "1.0.0",
+  "description": "A set of modules to randomize a map",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Marty Kane",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "@types/jest": "^29.5.14",
+    "@types/node": "^22.15.17",
+    "@typescript-eslint/eslint-plugin": "^8.32.1",
+    "eslint": "^9.26.0",
+    "eslint-config-prettier": "^10.1.5",
+    "eslint-plugin-prettier": "^5.4.0",
+    "jest": "^29.7.0",
+    "prettier": "^3.5.3",
+    "ts-jest": "^29.3.2",
+    "ts-loader": "^9.5.2",
+    "ts-node": "^10.9.2",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.8.3"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      "ts"
+    ],
+    "rootDir": "src",
+    "moduleNameMapper": {
+      "^@src/(.*)": "<rootDir>/$1"
+    },
+    "testRegex": ".*\\.spec\\.ts$",
+    "transform": {
+      "^.+\\.(t|j)s$": "ts-jest"
+    },
+    "collectCoverageFrom": [
+      "**/*.(t|j)s"
+    ],
+    "coverageDirectory": "coverage",
+    "coveragePathIgnorePatterns": [
+      "index.ts",
+      "main.ts"
+    ],
+    "coverageReporters": [
+      "html",
+      "text",
+      "lcov"
+    ],
+    "testEnvironment": "node"
+  }
+}
