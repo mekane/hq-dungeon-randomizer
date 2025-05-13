@@ -15,10 +15,7 @@ const roomIds = [
 export const MapView: FC<MapViewProps> = ({ mapConfig }) => {
   const [currentEl, setCurrentEl] = useState<number>(-1);
 
-  console.log("render", currentEl);
-
   const adjacent = adjacency[currentEl];
-  console.log(adjacent);
 
   return (
     <div className="map-grid" onMouseLeave={() => setCurrentEl(-1)}>
