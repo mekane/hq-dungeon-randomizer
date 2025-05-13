@@ -1,0 +1,243 @@
+.map-grid {
+    display: grid;
+    grid-template-columns: repeat(26, 40px);
+    grid-template-rows: repeat(19, 40px);
+    grid-template-areas:
+        "r00 r00 r00 r00 r00 r00 r00 r00 r00 r00 r00 r00 r01 r01 r02 r02 r02 r02 r02 r02 r02 r02 r02 r02 r02 r02"
+        "r03 r04 r04 r04 r04 r05 r05 r05 r05 r06 r06 r06 r01 r01 r07 r07 r07 r08 r08 r08 r08 r09 r09 r09 r09 r10"
+        "r03 r04 r04 r04 r04 r05 r05 r05 r05 r06 r06 r06 r01 r01 r07 r07 r07 r08 r08 r08 r08 r09 r09 r09 r09 r10"
+        "r03 r04 r04 r04 r04 r05 r05 r05 r05 r06 r06 r06 r01 r01 r07 r07 r07 r08 r08 r08 r08 r09 r09 r09 r09 r10"
+        "r03 r11 r11 r11 r11 r12 r12 r12 r12 r06 r06 r06 r01 r01 r07 r07 r07 r08 r08 r08 r08 r09 r09 r09 r09 r10"
+        "r03 r11 r11 r11 r11 r12 r12 r12 r12 r06 r06 r06 r01 r01 r07 r07 r07 r16 r16 r16 r16 r17 r17 r17 r17 r10"
+        "r03 r11 r11 r11 r11 r12 r12 r12 r12 r13 r14 r14 r14 r14 r14 r14 r15 r16 r16 r16 r16 r17 r17 r17 r17 r10"
+        "r03 r11 r11 r11 r11 r12 r12 r12 r12 r13 r19 r19 r19 r19 r19 r19 r15 r16 r16 r16 r16 r17 r17 r17 r17 r10"
+        "r03 r11 r11 r11 r11 r12 r12 r12 r12 r13 r19 r19 r19 r19 r19 r19 r15 r16 r16 r16 r16 r17 r17 r17 r17 r10"
+        "r18 r18 r18 r18 r18 r18 r18 r18 r18 r13 r19 r19 r19 r19 r19 r19 r15 r20 r20 r20 r20 r20 r20 r20 r20 r20"
+        "r21 r22 r22 r22 r22 r23 r23 r24 r24 r13 r19 r19 r19 r19 r19 r19 r15 r26 r26 r26 r26 r27 r27 r27 r27 r28"
+        "r21 r22 r22 r22 r22 r23 r23 r24 r24 r13 r19 r19 r19 r19 r19 r19 r15 r26 r26 r26 r26 r27 r27 r27 r27 r28"
+        "r21 r22 r22 r22 r22 r23 r23 r24 r24 r13 r25 r25 r25 r25 r25 r25 r15 r26 r26 r26 r26 r27 r27 r27 r27 r28"
+        "r21 r22 r22 r22 r22 r30 r30 r30 r30 r31 r31 r31 r32 r32 r33 r33 r33 r26 r26 r26 r26 r27 r27 r27 r27 r28"
+        "r21 r29 r29 r29 r29 r30 r30 r30 r30 r31 r31 r31 r32 r32 r33 r33 r33 r66 r34 r34 r34 r35 r35 r35 r35 r28"
+        "r21 r29 r29 r29 r29 r30 r30 r30 r30 r31 r31 r31 r32 r32 r33 r33 r33 r66 r34 r34 r34 r35 r35 r35 r35 r28"
+        "r21 r29 r29 r29 r29 r30 r30 r30 r30 r31 r31 r31 r32 r32 r33 r33 r33 r66 r34 r34 r34 r35 r35 r35 r35 r28"
+        "r21 r29 r29 r29 r29 r30 r30 r30 r30 r31 r31 r31 r32 r32 r33 r33 r33 r66 r34 r34 r34 r35 r35 r35 r35 r28"
+        "r36 r36 r36 r36 r36 r36 r36 r36 r36 r36 r36 r36 r32 r32 r37 r37 r37 r37 r37 r37 r37 r37 r37 r37 r37 r37"
+    ;
+}
+
+/* default height 1 */
+.map-grid>div {
+    border: 1px solid #ccc;
+    line-height: 40px;
+}
+
+
+/* height 3 */
+.map-grid .r4,
+.map-grid .r5,
+.map-grid .r23,
+.map-grid .r24 {
+    line-height: 120px;
+}
+
+/* height 4 */
+.map-grid .r6,
+.map-grid .r8,
+.map-grid .r9,
+.map-grid .r16,
+.map-grid .r17,
+.map-grid .r22,
+.map-grid .r29,
+.map-grid .r26,
+.map-grid .r27,
+.map-grid .r34,
+.map-grid .r35 {
+    line-height: 160px;
+}
+
+/* height 5 */
+.map-grid .r6,
+.map-grid .r7,
+.map-grid .r11,
+.map-grid .r12,
+.map-grid .r19,
+.map-grid .r30,
+.map-grid .r33 {
+    line-height: 200px;
+}
+
+/* height 6 */
+.map-grid .r1,
+.map-grid .r32 {
+    line-height: 240px;
+}
+
+.map-grid .r13,
+.map-grid .r15 {
+    line-height: 280px;
+}
+
+.map-grid .r3,
+.map-grid .r10,
+.map-grid .r21,
+.map-grid .r28 {
+    line-height: 320px;
+}
+
+
+
+.r0 {
+    grid-area: r00;
+}
+
+.r1 {
+    grid-area: r01;
+}
+
+.r2 {
+    grid-area: r02;
+}
+
+.r3 {
+    grid-area: r03;
+}
+
+.r4 {
+    grid-area: r04;
+}
+
+.r5 {
+    grid-area: r05;
+}
+
+.r6 {
+    grid-area: r06;
+}
+
+.r7 {
+    grid-area: r07;
+}
+
+.r8 {
+    grid-area: r08;
+}
+
+.r9 {
+    grid-area: r09;
+}
+
+.r10 {
+    grid-area: r10;
+}
+
+.r11 {
+    grid-area: r11;
+}
+
+.r12 {
+    grid-area: r12;
+}
+
+.r13 {
+    grid-area: r13;
+}
+
+.r14 {
+    grid-area: r14;
+}
+
+.r15 {
+    grid-area: r15;
+}
+
+.r16 {
+    grid-area: r16;
+}
+
+.r17 {
+    grid-area: r17;
+}
+
+.r18 {
+    grid-area: r18;
+}
+
+.r19 {
+    grid-area: r19;
+}
+
+.r20 {
+    grid-area: r20;
+}
+
+.r21 {
+    grid-area: r21;
+}
+
+.r22 {
+    grid-area: r22;
+}
+
+.r23 {
+    grid-area: r23;
+}
+
+.r24 {
+    grid-area: r24;
+}
+
+.r25 {
+    grid-area: r25;
+}
+
+.r26 {
+    grid-area: r26;
+}
+
+.r27 {
+    grid-area: r27;
+}
+
+.r28 {
+    grid-area: r28;
+}
+
+.r29 {
+    grid-area: r29;
+}
+
+.r30 {
+    grid-area: r30;
+}
+
+.r31 {
+    grid-area: r31;
+}
+
+.r32 {
+    grid-area: r32;
+}
+
+.r33 {
+    grid-area: r33;
+}
+
+.r34 {
+    grid-area: r34;
+}
+
+.r35 {
+    grid-area: r35;
+}
+
+.r36 {
+    grid-area: r36;
+}
+
+.r37 {
+    grid-area: r37;
+}
+
+.r66 {
+    grid-area: r66;
+}

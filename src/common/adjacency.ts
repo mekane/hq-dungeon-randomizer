@@ -38,3 +38,14 @@ export const adjacency: Record<string, number[]> = {
   "36": [21, 29, 30, 31, 32],
   "37": [28, 32, 33, 34, 35],
 };
+
+export const sidesToRooms: Record<string, number[]> = {
+  "0": [0, 1],
+  "1": [2],
+  "2": [2, 10, 20],
+  "3": [28, 37],
+  "4": [32, 37],
+  "5": [36],
+  "6": [18, 21, 36],
+  "7": [0, 3],
+};
